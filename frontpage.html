@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		How to make image Gallery Using
+		HTML CSS and Javascript?
+	</title>
+
+	<!--Style CSS-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>project webpage</h1>
+	<h6>Live Workshop and Online Courses!</h6>
+
+	<div class="myProducts">
+		<div class="myProducts-gallery">
+			<img src=
+            src="https://images.pexels.com/photos/2220337/pexels-photo-2220337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"            alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+            https://images.pexels.com/photos/671931/pexels-photo-671931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20211110154416/systemdesignworkshoplivethumbnail.png"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+            src="https://images.pexels.com/photos/15951552/pexels-photo-15951552/free-photo-of-swan-an-the-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src=
+            src="https://images.pexels.com/photos/1128839/pexels-photo-1128839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"				alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+</body>
+
+</html>
