@@ -3,49 +3,74 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
-	<title>
-		How to make image Gallery Using
-		HTML CSS and Javascript?
-	</title>
 
-	<!--Style CSS-->
 	<link rel="stylesheet" href="style.css">
+	<title>ContactUs</title>
 </head>
 
 <body>
-	<h1>project webpage</h1>
-	<h6>Live Workshop and Online Courses!</h6>
-
-	<div class="myProducts">
-		<div class="myProducts-gallery">
-			<img src=
-            src="https://images.pexels.com/photos/2220337/pexels-photo-2220337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"            alt="click here"
-				onclick="myImageFunction(this)">
-			<img src=
-            https://images.pexels.com/photos/671931/pexels-photo-671931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2				alt="click here"
-				onclick="myImageFunction(this)">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20211110154416/systemdesignworkshoplivethumbnail.png"
-				alt="click here"
-				onclick="myImageFunction(this)">
-			<img src=
-            src="https://images.pexels.com/photos/15951552/pexels-photo-15951552/free-photo-of-swan-an-the-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"		</div>
-
-		<div class="image-container">
-			<img id="img-Box" src=
-            src="https://images.pexels.com/photos/1128839/pexels-photo-1128839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"				alt="click here">
-		</div>
+	<div id="ContactUs">
+		<h1>Contact Us</h1>
+		<form action="#">
+			<div class="form-shape">
+				<label for="query">
+					Type of Query
+				</label>
+				<select name="myQuery" id="query">
+					<option value="sel" selected>
+						Select
+					</option>
+					<option value="ord">
+						Order related Issues
+					</option>
+					<option value="Site">
+						Site related Issues
+					</option>
+					<option value="fed">
+						Complaint related Issues
+					</option>
+					<option value="others">
+						Others
+					</option>
+				</select>
+			</div>
+			<div class="form-shape">
+				<label for="name">Name</label>
+				<input type="text" name="myName"
+					id="name"
+					placeholder="Enter your Name">
+			</div>
+			<div class="form-shape">
+				<label for="email">Email-Id</label>
+				<input type="email" name="myEmail"
+					id="email"
+					placeholder="Enter your email">
+			</div>
+			<div class="form-shape">
+				<label for="pho">Phone Number</label>
+				<input type="phone" name="myPhone"
+					id="pho"
+					placeholder="Enter your Phone no">
+			</div>
+			<div id="radio">
+				Are you a member of OnlneFoodShop:
+				Yes <input type="radio" name="eligible">
+				No <input type="radio" name="eligible">
+			</div>
+			<div class="form-shape">
+				<label for="message">
+					Ellaborate your query
+				</label>
+				<textarea name="mesg" id="message"
+					cols="30" rows="10">
+				</textarea>
+			</div>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
 	</div>
-
-	<script>
-		function myImageFunction(productSmallImg) {
-			var productFullImg = document.getElementById("img-Box");
-			productFullImg.src = productSmallImg.src;
-		}
-	</script>
 </body>
 
 </html>
